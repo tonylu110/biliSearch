@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "哔哩搜索",
+    "description": "这是一个方便的哔哩哔哩搜索视频工具",
+    "version": "0.0.1",
+    "icons": {
+        "128": "extension.png",
+        "48": "extension.png",
+        "16": "extension.png"
+    },
+    "action": {
+        "default_popup": "bili/build/index.html",
+        "default_icon": "extension.png"
+    },
+    "permissions": [
+        "storage",
+        "unlimitedStorage" 
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+}
