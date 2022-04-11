@@ -6,6 +6,11 @@
     padding: 10px;
     width: 280px;
     text-align: center;
+    margin-left: 10px;
+}
+
+#search_area{
     position: fixed;
-    left: 10px;
+    left: 0;
+    background-color: white;
 }

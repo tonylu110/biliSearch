@@ -1,14 +1,23 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import '../css/List.css'
 
-class List extends Component {
-  render() {
+function List(props) {
+    let keyword = props.keyword
+    
+    const [arr] = useState([])
+
     return (
-      <div>
-        12213
-      </div>
+        <div>
+            {
+                arr.map((item, index) => {
+                    return (
+                        <div className="list_main" key={index}>{item}</div>
+                    )
+                })
+            }
+            <div>{keyword}</div>
+        </div>
     )
-  }
 }
 
 export default List
