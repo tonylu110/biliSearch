@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../css/List.css'
 
 function List(props) {
-    let keyword = props.keyword
-    
-    const [arr] = useState([])
+    let arr = props.arr
 
     return (
         <div>
@@ -15,7 +13,6 @@ function List(props) {
                     )
                 })
             }
-            <div>{keyword}</div>
         </div>
     )
 }

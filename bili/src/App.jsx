@@ -6,21 +6,21 @@ import List from './components/List'
 
 class App extends Component {
     state = {
-        keyword: ''
+        arr: []
     }
     render() {
         return (
             <div>
                 <div className='list_margin'></div>
-                <Search getKeyword={this.getKeyword.bind(this)} />
+                <Search getList={this.getList.bind(this)} />
                 <div className='list_top'></div>
-                <List keyword={this.state.keyword} />
+                <List arr={this.state.arr} />
                 <div className='list_margin'></div>
             </div>
         )
     }
-    getKeyword(keyword) {
-        this.setState({keyword: keyword})
+    getList(arr) {
+        this.setState({arr: arr})
     }
 }
 
